@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./components/ProjectCard.jsx";
+import Header from "./components/Header.jsx";
 
 /**
  *
@@ -7,9 +8,7 @@ import ProjectCard from "./components/ProjectCard.jsx";
 function App() {
   return (
     <div className="app">
-      <header className="app__header header">
-        <h1 className="header__title">Portfolio Riyad-zrg</h1>
-      </header>
+      <Header />
       <main
         style={{
           display: "flex",
