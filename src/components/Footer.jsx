@@ -1,6 +1,5 @@
-import React from "react";
 /**
- *Footer of the portfolio.
+ *
  */
 function Footer() {
   return (

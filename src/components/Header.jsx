@@ -1,6 +1,5 @@
-import React from "react";
 /**
- *Header of the portfolio.
+ *
  */
 function Header() {
   return (

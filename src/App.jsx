@@ -19,50 +19,50 @@ function App() {
       <Header />
       <main
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-start",
-          flexWrap: "wrap",
-          gap: "2rem",
-          padding: "2rem",
           flexGrow: 1,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          padding: "2rem 0",
         }}
       >
-        <div
-          className="Projects"
+        <h2
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "2rem",
+            textAlign: "center",
+            fontSize: "1.8rem",
+            marginBottom: "2rem",
           }}
         >
-          <h2 style={{ margin: 0, fontSize: "1.8rem" }}>Mes projets</h2>
-          <div
-            className="cards"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              flexWrap: "wrap",
-              gap: "2rem",
-            }}
-          >
-            <ProjectCard
-              image="https://via.placeholder.com/300x180"
-              title="Projet 1"
-              description="Description du premier projet."
-            />
-            <ProjectCard
-              image="https://via.placeholder.com/300x180"
-              title="Projet 2"
-              description="Description du deuxième projet."
-            />
-            <ProjectCard
-              image="https://via.placeholder.com/300x180"
-              title="Projet 3"
-              description="Description du troisième projet."
-            />
-          </div>
+          Mes projets
+        </h2>
+        <div
+          className="cards"
+          style={{
+            display: "flex",
+            justifyContent: "flex-start",
+            flexWrap: "wrap",
+            gap: "2rem",
+            width: "100%",
+            maxWidth: "1200px",
+            padding: "0 1rem",
+            boxSizing: "border-box",
+          }}
+        >
+          <ProjectCard
+            image="https://via.placeholder.com/300x180"
+            title="Projet 1"
+            description="Description du premier projet."
+          />
+          <ProjectCard
+            image="https://via.placeholder.com/300x180"
+            title="Projet 2"
+            description="Description du deuxième projet."
+          />
+          <ProjectCard
+            image="https://via.placeholder.com/300x180"
+            title="Projet 3"
+            description="Description du troisième projet."
+          />
         </div>
       </main>
       <Footer />

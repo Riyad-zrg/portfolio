@@ -9,7 +9,9 @@ function ProjectCard({ image, title, description }) {
   return (
     <div
       style={{
-        width: "300px",
+        flex: "1 1 280px",
+        maxWidth: "300px",
+        minWidth: "250px",
         borderRadius: "12px",
         overflow: "hidden",
         boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
