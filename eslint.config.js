@@ -3,8 +3,11 @@ import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
-
+import eslintConfigESLint from 'eslint-config-eslint';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 export default defineConfig([
+  ...eslintConfigESLint,
+  eslintPluginPrettierRecommended,
   globalIgnores(['dist']),
   {
     files: ['**/*.{js,jsx}'],
