@@ -10,12 +10,12 @@ function ProjectCard({ image, title, description }) {
     <div
       style={{
         flex: "1 1 280px",
-        maxWidth: "300px",
-        minWidth: "250px",
+        maxWidth: "320px",
+        minWidth: "220px",
         borderRadius: "12px",
         overflow: "hidden",
         boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-        backgroundColor: "#fff",
+        backgroundColor: "#333",
         transition: "transform 0.3s ease",
         cursor: "pointer",
       }}
@@ -28,8 +28,12 @@ function ProjectCard({ image, title, description }) {
         style={{ width: "100%", height: "180px", objectFit: "cover" }}
       />
       <div style={{ padding: "1rem" }}>
-        <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem" }}>{title}</h3>
-        <p style={{ color: "#555" }}>{description}</p>
+        <h3
+          style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "#ddd" }}
+        >
+          {title}
+        </h3>
+        <p style={{ color: "#ccc", fontSize: "1rem" }}>{description}</p>
       </div>
     </div>
   );

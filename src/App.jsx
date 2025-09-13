@@ -39,7 +39,7 @@ function App() {
           className="cards"
           style={{
             display: "flex",
-            justifyContent: "flex-start",
+            justifyContent: "flex-center",
             flexWrap: "wrap",
             gap: "2rem",
             width: "100%",

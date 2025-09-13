@@ -68,7 +68,7 @@ body,
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .cards {
     justify-content: center;
   }
