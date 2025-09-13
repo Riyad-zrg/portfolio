@@ -29,32 +29,40 @@ function App() {
         }}
       >
         <div
-          className="cards"
+          className="Projects"
           style={{
             display: "flex",
-            justifyContent: "center",
-            alignItems: "flex-start",
-            flexWrap: "wrap",
+            flexDirection: "column",
+            alignItems: "center",
             gap: "2rem",
-            padding: "2rem",
-            flexGrow: 1,
           }}
         >
-          <ProjectCard
-            image="https://via.placeholder.com/300x180"
-            title="Projet 1"
-            description="Description du premier projet."
-          />
-          <ProjectCard
-            image="https://via.placeholder.com/300x180"
-            title="Projet 2"
-            description="Description du deuxième projet."
-          />
-          <ProjectCard
-            image="https://via.placeholder.com/300x180"
-            title="Projet 3"
-            description="Description du troisième projet."
-          />
+          <h2 style={{ margin: 0, fontSize: "1.8rem" }}>Mes projets</h2>
+          <div
+            className="cards"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              gap: "2rem",
+            }}
+          >
+            <ProjectCard
+              image="https://via.placeholder.com/300x180"
+              title="Projet 1"
+              description="Description du premier projet."
+            />
+            <ProjectCard
+              image="https://via.placeholder.com/300x180"
+              title="Projet 2"
+              description="Description du deuxième projet."
+            />
+            <ProjectCard
+              image="https://via.placeholder.com/300x180"
+              title="Projet 3"
+              description="Description du troisième projet."
+            />
+          </div>
         </div>
       </main>
       <Footer />
