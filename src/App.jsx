@@ -10,11 +10,29 @@ function App() {
       <header className="app__header header">
         <h1 className="header__title">Portfolio Riyad-zrg</h1>
       </header>
-      <main className="app__main">
+      <main
+        style={{
+          display: "flex",
+          gap: "2rem",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          padding: "2rem",
+        }}
+      >
         <ProjectCard
           image="https://via.placeholder.com/300x180"
-          title="Mon projet"
-          description="Une petite description du projet."
+          title="Projet 1"
+          description="Description du premier projet."
+        />
+        <ProjectCard
+          image="https://via.placeholder.com/300x180"
+          title="Projet 2"
+          description="Description du deuxième projet."
+        />
+        <ProjectCard
+          image="https://via.placeholder.com/300x180"
+          title="Projet 3"
+          description="Description du troisième projet."
         />
       </main>
       <footer className="app__footer footer">footer</footer>
