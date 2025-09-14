@@ -2,7 +2,9 @@ import React from "react";
 import ProjectCard from "./components/ProjectCard.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-
+import ChaineYoutube from "./images/minia_mensonges_enfance.jpg";
+import ReimsExplorer from "./images/reims_explorer.jpg";
+import SquareShipBattle from "./images/squareshipbattle.png";
 /**
  *
  */
@@ -49,19 +51,22 @@ function App() {
           }}
         >
           <ProjectCard
-            image="https://via.placeholder.com/300x180"
-            title="Projet 1"
-            description="Description du premier projet."
+            image={ChaineYoutube}
+            description="Ma chaîne YouTube."
+            title="Chaîne YouTube"
+            url="https://youtube.com/@novexy_?si=62frQEAzeKR9Hkkc"
           />
           <ProjectCard
-            image="https://via.placeholder.com/300x180"
-            title="Projet 2"
-            description="Description du deuxième projet."
+            image={ReimsExplorer}
+            title="Reims Explorer"
+            description="Pour tester l'application, vous pouvez vous connecter avec l'adresse e-mail 'john.doe@gmail.com' et le Mot de Passe 'test."
+            url="https://sae.harish.fr/home"
           />
           <ProjectCard
-            image="https://via.placeholder.com/300x180"
-            title="Projet 3"
-            description="Description du troisième projet."
+            image={SquareShipBattle}
+            title="SquareShip Battle"
+            description="Jeu vidéo réalisé avec Phaser."
+            url="https://riyad-zrg.github.io/SquareShip-Battle/"
           />
         </div>
       </main>

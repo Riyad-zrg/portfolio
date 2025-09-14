@@ -4,8 +4,13 @@
  * @param root0.image
  * @param root0.title
  * @param root0.description
+ * @param root0.url
  */
-function ProjectCard({ image, title, description }) {
+function ProjectCard({ image, title, description, url }) {
+  const handleClick = () => {
+    if (url) window.open(url, "_blank");
+  };
+
   return (
     <div
       style={{
@@ -21,6 +26,7 @@ function ProjectCard({ image, title, description }) {
       }}
       onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
       onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      onClick={handleClick}
     >
       <img
         src={image}
