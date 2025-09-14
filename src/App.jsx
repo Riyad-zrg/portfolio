@@ -59,7 +59,7 @@ function App() {
           <ProjectCard
             image={ReimsExplorer}
             title="Reims Explorer"
-            description="Pour tester l'application, vous pouvez vous connecter avec l'adresse e-mail 'john.doe@gmail.com' et le Mot de Passe 'test."
+            description="Conception d’une application en groupe de cinq, en utilisant PHP Symfony et intégrée à une API."
             url="https://sae.harish.fr/home"
           />
           <ProjectCard
