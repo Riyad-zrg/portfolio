@@ -15,7 +15,7 @@ function Header() {
       }}
     >
       <h1 style={{ margin: 0, fontSize: "2rem", letterSpacing: "1px" }}>
-        Portfolio Riyad-zrg
+        Riyad ZERROUGUI
       </h1>
       <p style={{ marginTop: "0.5rem", color: "rgba(255,255,255,0.8)" }}>
         Mes projets
