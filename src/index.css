@@ -7,7 +7,7 @@ body,
   padding: 0;
   display: flex;
   flex-direction: column;
-  background-color: #000;
+  background-color: #444;
   color: #ddd;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
