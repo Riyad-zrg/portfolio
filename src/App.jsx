@@ -5,6 +5,9 @@ import Footer from "./components/Footer.jsx";
 import ChaineYoutube from "./images/minia_mensonges_enfance.jpg";
 import ReimsExplorer from "./images/reims_explorer.jpg";
 import SquareShipBattle from "./images/squareshipbattle.png";
+import TeletCom from "./images/teletcom.png";
+import DronisteSiteWeb from "./images/droniste_site_web.png";
+import MarioKartScratch from "./images/mariokartscratch.png";
 /**
  *
  */
@@ -41,7 +44,7 @@ function App() {
           className="cards"
           style={{
             display: "flex",
-            justifyContent: "flex-center",
+            justifyContent: "center",
             flexWrap: "wrap",
             gap: "2rem",
             width: "100%",
@@ -67,6 +70,24 @@ function App() {
             title="SquareShip Battle"
             description="Jeu vidéo réalisé avec Phaser."
             url="https://riyad-zrg.github.io/SquareShip-Battle/"
+          />
+          <ProjectCard
+            image={TeletCom}
+            title="Tel&Com"
+            description="Site web réalisé sur Framer durant mon stage chez Hafficom. Le site était destiné à un client."
+            url="https://riyad-zrg.github.io/Tel-Com/"
+          />
+          <ProjectCard
+            image={DronisteSiteWeb}
+            title="Site Web Droniste"
+            description="Site web réalisé sur Framer pour un portfolio de droniste."
+            url="https://spiky-slide-156314.framer.app/"
+          />
+          <ProjectCard
+            image={MarioKartScratch}
+            title="Jeu Mario Kart Scracth"
+            description="Jeu Mario Kart réalisé sur Scratch en classe de troisème."
+            url="https://scratch.mit.edu/projects/802823811/fullscreen/"
           />
         </div>
       </main>
