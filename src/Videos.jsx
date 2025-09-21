@@ -8,7 +8,7 @@ import MaisonRafaelle_Terrasse1 from "./videos/MaisonRafaelle_Terrasse1.mp4";
 import MaisonRafaelle_Terrasse2 from "./videos/MaisonRafaelle_Terrasse2.mp4";
 import MeilleurTaux_Bref from "./videos/MeilleurTaux_Bref.mp4";
 import Bref_OTacosSedan from "./videos/Bref_OTacosSedan.mp4";
-
+import SL2E_CABARET_VERT_ANIMATION from "./videos/SL2E_CABARET_VERT_ANIMATION.mp4";
 /**
  *
  */
@@ -74,6 +74,11 @@ function Videos() {
             title="Maison Rafaelle - Terrasse 2"
             description="Réalisation du tournage et du montage."
             videoSrc={MaisonRafaelle_Terrasse2}
+          />
+          <VideoCard
+            title="Animation 2D SL2E"
+            description="Réalisation du script, de l'animation et de la voix off."
+            videoSrc={SL2E_CABARET_VERT_ANIMATION}
           />
         </div>
         <Link to="/" style={{ marginTop: "2rem", textDecoration: "none" }}>
