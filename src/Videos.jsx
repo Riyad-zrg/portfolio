@@ -4,7 +4,10 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import VideoCard from "./components/VideoCard.jsx";
 import MaisonRafaelle from "./videos/MaisonRafaelle.mp4";
+import MaisonRafaelle_Terrasse1 from "./videos/MaisonRafaelle_Terrasse1.mp4";
+import MaisonRafaelle_Terrasse2 from "./videos/MaisonRafaelle_Terrasse2.mp4";
 import MeilleurTaux_Bref from "./videos/MeilleurTaux_Bref.mp4";
+import Bref_OTacosSedan from "./videos/Bref_OTacosSedan.mp4";
 
 /**
  *
@@ -46,20 +49,34 @@ function Videos() {
           }}
         >
           <VideoCard
-            title="Maison Rafaelle - Terrasse 2"
-            description="Tournage et montage d'une seconde vidéo de présentation."
-            videoSrc={MaisonRafaelle}
+            title="BREF - O'Tacos Sedan"
+            description="Réalisation du tournage, du montage et de la voix off."
+            videoSrc={Bref_OTacosSedan}
           />
+
           <VideoCard
-            title="Meilleur Taux - BREF"
-            description="Voix-off et montage de la vidéo publicitaire."
+            title="BREF - Meilleur Taux Ardennes"
+            description="Réalisation du montage et de la voix off."
             videoSrc={MeilleurTaux_Bref}
           />
+          <VideoCard
+            title="Maison Rafaelle - Préparation de pâtes"
+            description="Réalisation du tournage et du montage."
+            videoSrc={MaisonRafaelle}
+          />
+
+          <VideoCard
+            title="Maison Rafaelle - Terrasse 1"
+            description="Réalisation du tournage et du montage."
+            videoSrc={MaisonRafaelle_Terrasse1}
+          />
+          <VideoCard
+            title="Maison Rafaelle - Terrasse 2"
+            description="Réalisation du tournage et du montage."
+            videoSrc={MaisonRafaelle_Terrasse2}
+          />
         </div>
-        <Link
-          to="/portfolio"
-          style={{ marginTop: "2rem", textDecoration: "none" }}
-        >
+        <Link to="/" style={{ marginTop: "2rem", textDecoration: "none" }}>
           <div
             style={{
               background: "linear-gradient(90deg, #8f94fb, #4e54c8)",

@@ -80,16 +80,16 @@ function App() {
             url="https://spiky-slide-156314.framer.app/"
           />
           <ProjectCard
+            image={Hafficom}
+            title="Vidéos de stage"
+            description="Montage, tournage, voix-off réalisés durant mon stage chez Hafficom."
+            to="/videos"
+          />
+          <ProjectCard
             image={MarioKartScratch}
             title="Jeu Mario Kart Scracth"
             description="Jeu Mario Kart réalisé sur Scratch en classe de troisème."
             url="https://scratch.mit.edu/projects/802823811/fullscreen/"
-          />
-          <ProjectCard
-            image={Hafficom}
-            title="Vidéos de stage"
-            description="Montage, tournage, voix-off et animation 2D réalisés durant mon stage chez Hafficom."
-            to="/videos"
           />
         </div>
       </main>
