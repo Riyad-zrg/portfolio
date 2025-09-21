@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 /**
  *
  * @param root0
@@ -5,13 +7,14 @@
  * @param root0.title
  * @param root0.description
  * @param root0.url
+ * @param root0.to
  */
-function ProjectCard({ image, title, description, url }) {
+function ProjectCard({ image, title, description, url, to }) {
   const handleClick = () => {
     if (url) window.open(url, "_blank");
   };
 
-  return (
+  const CardContent = (
     <div
       style={{
         flex: "1 1 280px",
@@ -26,7 +29,7 @@ function ProjectCard({ image, title, description, url }) {
       }}
       onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
       onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-      onClick={handleClick}
+      onClick={url ? handleClick : undefined}
     >
       <img
         src={image}
@@ -42,6 +45,14 @@ function ProjectCard({ image, title, description, url }) {
         <p style={{ color: "#ccc", fontSize: "1rem" }}>{description}</p>
       </div>
     </div>
+  );
+
+  return to ? (
+    <Link to={to} style={{ textDecoration: "none" }}>
+      {CardContent}
+    </Link>
+  ) : (
+    CardContent
   );
 }
 

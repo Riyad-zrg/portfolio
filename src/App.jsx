@@ -8,27 +8,25 @@ import SquareShipBattle from "./images/squareshipbattle.png";
 import TeletCom from "./images/teletcom.png";
 import DronisteSiteWeb from "./images/droniste_site_web.png";
 import MarioKartScratch from "./images/mariokartscratch.png";
+import Hafficom from "./images/Hafficom.png";
+
 /**
  *
  */
 function App() {
   return (
     <div
-      className="app"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh",
-      }}
+      className="app page"
+      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
     >
       <Header />
       <main
         style={{
-          flexGrow: 1,
+          flex: 1,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          padding: "2rem 0",
+          padding: "2rem 1rem",
         }}
       >
         <h2
@@ -44,13 +42,11 @@ function App() {
           className="cards"
           style={{
             display: "flex",
-            justifyContent: "center",
             flexWrap: "wrap",
+            justifyContent: "center",
             gap: "2rem",
             width: "100%",
             maxWidth: "1200px",
-            padding: "0 1rem",
-            boxSizing: "border-box",
           }}
         >
           <ProjectCard
@@ -88,6 +84,12 @@ function App() {
             title="Jeu Mario Kart Scracth"
             description="Jeu Mario Kart réalisé sur Scratch en classe de troisème."
             url="https://scratch.mit.edu/projects/802823811/fullscreen/"
+          />
+          <ProjectCard
+            image={Hafficom}
+            title="Vidéos de stage"
+            description="Montage, tournage, voix-off et animation 2D réalisés durant mon stage chez Hafficom."
+            to="/videos"
           />
         </div>
       </main>
