@@ -3,12 +3,13 @@ import ProjectCard from "./components/ProjectCard.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import ChaineYoutube from "./images/minia_mensonges_enfance.jpg";
-import ReimsExplorer from "./images/reims_explorer.jpg";
 import SquareShipBattle from "./images/squareshipbattle.png";
 import TeletCom from "./images/teletcom.png";
 import DronisteSiteWeb from "./images/droniste_site_web.png";
 import MarioKartScratch from "./images/mariokartscratch.png";
 import Hafficom from "./images/Hafficom.png";
+import Taquin from "./images/taquin.png";
+import Gulat from "./images/gulat.png";
 
 /**
  *
@@ -17,7 +18,7 @@ function App() {
   return (
     <div
       className="app page"
-      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      style={{ flex: 1, flexDirection: "column", height: "100%" }}
     >
       <Header />
       <main
@@ -29,26 +30,7 @@ function App() {
           padding: "2rem 1rem",
         }}
       >
-        <h2
-          style={{
-            textAlign: "center",
-            fontSize: "1.8rem",
-            marginBottom: "2rem",
-          }}
-        >
-          Mes projets
-        </h2>
-        <div
-          className="cards"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            gap: "2rem",
-            width: "100%",
-            maxWidth: "1200px",
-          }}
-        >
+        <div className="cards">
           <ProjectCard
             image={ChaineYoutube}
             description="Ma chaîne YouTube."
@@ -56,10 +38,16 @@ function App() {
             url="https://youtube.com/@novexy_?si=62frQEAzeKR9Hkkc"
           />
           <ProjectCard
-            image={ReimsExplorer}
-            title="Reims Explorer"
-            description="Conception d’une application en groupe de cinq, en utilisant PHP Symfony et intégrée à une API."
-            url="https://sae.harish.fr/home"
+            image={Taquin}
+            title="Taquin React-Native"
+            description="Application de Taquin réalisé avec React Native. Projet réalisé en individuel."
+            url="https://riyad-zrg-taquin.expo.app/"
+          />
+          <ProjectCard
+            image={Gulat}
+            title="Gulat"
+            description="Jeu de combat réalisé sur Godot en collaboration avec 3 autres développeurs. J'ai personellement réalisé les animations des personnages avec le logiciel Aseprite."
+            url="https://riyad-zrg.github.io/GULAT/"
           />
           <ProjectCard
             image={SquareShipBattle}
@@ -79,17 +67,18 @@ function App() {
             description="Site web réalisé sur Framer pour un portfolio de droniste."
             url="https://spiky-slide-156314.framer.app/"
           />
-          <ProjectCard
-            image={Hafficom}
-            title="Vidéos de stage"
-            description="Montage, tournage, voix-off réalisés durant mon stage chez Hafficom."
-            to="/videos"
-          />
+
           <ProjectCard
             image={MarioKartScratch}
             title="Jeu Mario Kart Scracth"
             description="Jeu Mario Kart réalisé sur Scratch en classe de troisème."
             url="https://scratch.mit.edu/projects/802823811/fullscreen/"
+          />
+          <ProjectCard
+            image={Hafficom}
+            title="Vidéos de stage"
+            description="Montage, tournage, voix-off réalisés durant mon stage chez Hafficom."
+            to="/videos"
           />
         </div>
       </main>

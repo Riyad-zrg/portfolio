@@ -13,17 +13,6 @@ body,
   font-family: Arial, sans-serif;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: #444;
-  min-height: 100vh;
-  box-sizing: border-box;
-}
-
 .app__header {
   min-height: 5em;
   display: flex;
@@ -40,7 +29,6 @@ body,
   flex-direction: column;
   align-items: center;
 }
-
 
 .app__footer {
   text-align: center;
@@ -60,15 +48,15 @@ body,
 
 .cards {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   padding: 0 1rem;
   box-sizing: border-box;
 }
-
 
 @media (max-width: 900px) {
   .cards {

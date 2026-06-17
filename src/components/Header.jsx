@@ -7,11 +7,12 @@ function Header() {
       style={{
         background: "linear-gradient(90deg, #4e54c8, #8f94fb)",
         color: "white",
-        padding: "2rem 1rem",
         textAlign: "center",
         boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
         borderBottomLeftRadius: "12px",
         borderBottomRightRadius: "12px",
+        height: "100px",
+        alignContent: "center",
       }}
     >
       <h1 style={{ margin: 0, fontSize: "2rem", letterSpacing: "1px" }}>
