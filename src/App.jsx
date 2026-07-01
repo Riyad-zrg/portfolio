@@ -10,6 +10,7 @@ import MarioKartScratch from "./images/mariokartscratch.png";
 import Hafficom from "./images/Hafficom.png";
 import Taquin from "./images/taquin.png";
 import Gulat from "./images/gulat.png";
+import Socatoa from "./images/socatoa.png";
 
 /**
  *
@@ -33,26 +34,32 @@ function App() {
         <div className="cards">
           <ProjectCard
             image={ChaineYoutube}
-            description="Ma chaîne YouTube."
+            description="Chaîne Youtube d'animation qui m'a appris à être responsable d'un projet pour le faire vivre et l'améliorer de manière constante."
             title="Chaîne YouTube"
             url="https://youtube.com/@novexy_?si=62frQEAzeKR9Hkkc"
           />
           <ProjectCard
+            image={Socatoa}
+            title="Socatoa"
+            description="Application pour aider ma petite soeur à réviser le brevet de mathématiques. Réalisée en complète autonomie de l'initialisation à la mise en production avec les frameworks NextJs et NestJS."
+            url="https://socatoa.eu/"
+          />
+          <ProjectCard
             image={Taquin}
             title="Taquin React-Native"
-            description="Application de Taquin réalisé avec React Native. Projet réalisé en individuel."
+            description="Application de Taquin réalisé avec React Native."
             url="https://riyad-zrg-taquin.expo.app/"
           />
           <ProjectCard
             image={Gulat}
             title="Gulat"
-            description="Jeu de combat réalisé sur Godot en collaboration avec 3 autres développeurs. J'ai personellement réalisé les animations des personnages avec le logiciel Aseprite."
+            description="Jeu de combat réalisé sur Godot en collaboration avec 3 autres développeurs. J'ai personellement réalisé les animations des personnages."
             url="https://riyad-zrg.github.io/GULAT/"
           />
           <ProjectCard
             image={SquareShipBattle}
             title="SquareShip Battle"
-            description="Jeu vidéo réalisé avec Phaser."
+            description="Jeu vidéo de type Shoot 'em up réalisé avec Phaser."
             url="https://riyad-zrg.github.io/SquareShip-Battle/"
           />
           <ProjectCard
